@@ -1,0 +1,55 @@
+name: Update Ferry Schedule
+
+on:
+  schedule:
+    # Runs daily at 9:00 UTC (~5am Toronto time in summer / 4am in winter).
+    # Adjust to whenever you want fresh data ready for the day.
+    - cron: '0 9 * * *'
+  workflow_dispatch: # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write # needed to commit the updated JSON back to the repo
+
+jobs:
+  update-schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        run: python scrape_ferry_schedule.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ferry-schedule.json
+          git diff --quiet --cached || git commit -m "Update ferry schedule data"
+          git push
+
+      # Only runs if any previous step in this job failed (scrape or commit).
+      - name: Send failure email
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "⚠️ Ferry schedule scrape failed"
+          to: ${{ secrets.ALERT_EMAIL }}
+          from: Ferry Schedule Bot
+          body: |
+            The daily ferry schedule scrape failed.
+
+            Check the full log here:
+            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
