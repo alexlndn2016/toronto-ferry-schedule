@@ -34,6 +34,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/ferry-schedule.json
           git diff --quiet --cached || git commit -m "Update ferry schedule data"
+          git pull --rebase origin main
           git push
 
       # Only runs if any previous step in this job failed (scrape or commit).
