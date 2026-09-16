@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-15T14:14:46.250358+00:00",
-  "scheduleLabel": "Summer Schedule: May 13 to September 15",
+  "generatedAt": "2026-09-16T14:07:02.126973+00:00",
+  "scheduleLabel": "Fall Schedule: September 16 to October 13",
   "holidays": [
     "2026-01-01",
     "2026-02-16",
@@ -53,10 +53,6 @@
           "peakOnly": false
         },
         {
-          "time": "12:20",
-          "peakOnly": true
-        },
-        {
           "time": "12:40",
           "peakOnly": false
         },
@@ -97,20 +93,12 @@
           "peakOnly": false
         },
         {
-          "time": "20:00",
-          "peakOnly": true
-        },
-        {
           "time": "21:00",
           "peakOnly": false
         },
         {
           "time": "21:40",
           "peakOnly": false
-        },
-        {
-          "time": "22:00",
-          "peakOnly": true
         },
         {
           "time": "23:00",
@@ -145,10 +133,6 @@
         {
           "time": "11:40",
           "peakOnly": false
-        },
-        {
-          "time": "12:40",
-          "peakOnly": true
         },
         {
           "time": "13:00",
@@ -191,20 +175,12 @@
           "peakOnly": false
         },
         {
-          "time": "20:20",
-          "peakOnly": true
-        },
-        {
           "time": "21:20",
           "peakOnly": false
         },
         {
           "time": "22:00",
           "peakOnly": false
-        },
-        {
-          "time": "22:20",
-          "peakOnly": true
         },
         {
           "time": "23:15",
@@ -272,10 +248,6 @@
           "peakOnly": false
         },
         {
-          "time": "14:45",
-          "peakOnly": false
-        },
-        {
           "time": "15:15",
           "peakOnly": false
         },
@@ -321,10 +293,6 @@
         },
         {
           "time": "22:15",
-          "peakOnly": false
-        },
-        {
-          "time": "22:45",
           "peakOnly": false
         }
       ],
@@ -382,10 +350,6 @@
           "peakOnly": false
         },
         {
-          "time": "15:00",
-          "peakOnly": false
-        },
-        {
           "time": "15:30",
           "peakOnly": false
         },
@@ -431,10 +395,6 @@
         },
         {
           "time": "22:30",
-          "peakOnly": false
-        },
-        {
-          "time": "23:00",
           "peakOnly": false
         }
       ]
@@ -523,16 +483,8 @@
           "peakOnly": false
         },
         {
-          "time": "20:00",
-          "peakOnly": true
-        },
-        {
           "time": "20:30",
           "peakOnly": false
-        },
-        {
-          "time": "21:00",
-          "peakOnly": true
         },
         {
           "time": "21:30",
@@ -633,16 +585,215 @@
           "peakOnly": false
         },
         {
-          "time": "20:15",
-          "peakOnly": true
-        },
-        {
           "time": "20:45",
           "peakOnly": false
         },
         {
-          "time": "21:15",
-          "peakOnly": true
+          "time": "21:45",
+          "peakOnly": false
+        },
+        {
+          "time": "22:45",
+          "peakOnly": false
+        },
+        {
+          "time": "23:15",
+          "peakOnly": false
+        },
+        {
+          "time": "23:45",
+          "peakOnly": false
+        }
+      ]
+    },
+    {
+      "destination": "Ward's Island",
+      "departsCity": [
+        {
+          "time": "06:30",
+          "peakOnly": false
+        },
+        {
+          "time": "07:00",
+          "peakOnly": false
+        },
+        {
+          "time": "07:30",
+          "peakOnly": false
+        },
+        {
+          "time": "08:15",
+          "peakOnly": false
+        },
+        {
+          "time": "09:00",
+          "peakOnly": false
+        },
+        {
+          "time": "09:30",
+          "peakOnly": false
+        },
+        {
+          "time": "10:30",
+          "peakOnly": false
+        },
+        {
+          "time": "11:30",
+          "peakOnly": false
+        },
+        {
+          "time": "12:00",
+          "peakOnly": false
+        },
+        {
+          "time": "12:30",
+          "peakOnly": false
+        },
+        {
+          "time": "13:30",
+          "peakOnly": false
+        },
+        {
+          "time": "14:00",
+          "peakOnly": false
+        },
+        {
+          "time": "14:30",
+          "peakOnly": false
+        },
+        {
+          "time": "15:30",
+          "peakOnly": false
+        },
+        {
+          "time": "16:00",
+          "peakOnly": false
+        },
+        {
+          "time": "16:30",
+          "peakOnly": false
+        },
+        {
+          "time": "17:30",
+          "peakOnly": false
+        },
+        {
+          "time": "18:00",
+          "peakOnly": false
+        },
+        {
+          "time": "18:30",
+          "peakOnly": false
+        },
+        {
+          "time": "19:30",
+          "peakOnly": false
+        },
+        {
+          "time": "20:30",
+          "peakOnly": false
+        },
+        {
+          "time": "21:30",
+          "peakOnly": false
+        },
+        {
+          "time": "22:30",
+          "peakOnly": false
+        },
+        {
+          "time": "23:00",
+          "peakOnly": false
+        },
+        {
+          "time": "23:30",
+          "peakOnly": false
+        }
+      ],
+      "departsIsland": [
+        {
+          "time": "06:45",
+          "peakOnly": false
+        },
+        {
+          "time": "07:15",
+          "peakOnly": false
+        },
+        {
+          "time": "07:45",
+          "peakOnly": false
+        },
+        {
+          "time": "08:30",
+          "peakOnly": false
+        },
+        {
+          "time": "09:15",
+          "peakOnly": false
+        },
+        {
+          "time": "09:45",
+          "peakOnly": false
+        },
+        {
+          "time": "10:45",
+          "peakOnly": false
+        },
+        {
+          "time": "11:45",
+          "peakOnly": false
+        },
+        {
+          "time": "12:15",
+          "peakOnly": false
+        },
+        {
+          "time": "12:45",
+          "peakOnly": false
+        },
+        {
+          "time": "13:45",
+          "peakOnly": false
+        },
+        {
+          "time": "14:15",
+          "peakOnly": false
+        },
+        {
+          "time": "14:45",
+          "peakOnly": false
+        },
+        {
+          "time": "15:45",
+          "peakOnly": false
+        },
+        {
+          "time": "16:15",
+          "peakOnly": false
+        },
+        {
+          "time": "16:45",
+          "peakOnly": false
+        },
+        {
+          "time": "17:45",
+          "peakOnly": false
+        },
+        {
+          "time": "18:15",
+          "peakOnly": false
+        },
+        {
+          "time": "18:45",
+          "peakOnly": false
+        },
+        {
+          "time": "19:45",
+          "peakOnly": false
+        },
+        {
+          "time": "20:45",
+          "peakOnly": false
         },
         {
           "time": "21:45",
